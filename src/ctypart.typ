@@ -1,5 +1,3 @@
-#import "@preview/outrageous:0.4.0"
-
 #let font-size-map = (
   "初号": 42pt,
   "小初": 36pt,
@@ -241,7 +239,7 @@
   // 制作目录
   if make-outline {
     show outline: set par(first-line-indent: 0em)
-    show outline.entry: outrageous.show-entry
+    // show outline.entry: outrageous.show-entry
     show outline.entry.where(
       level: 1
     ): it => {
